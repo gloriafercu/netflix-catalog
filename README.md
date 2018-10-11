@@ -1,2 +1,3 @@
-# netflix-catalog
-This repository contains the Netflix's catalog layout
+# Netflix's catalog layout
+
+This repository contains the Netflix's catalog layout.
