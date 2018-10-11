@@ -1,0 +1,33 @@
+{
+	"name": "netflix-catalog",
+	"version": "1.0.0",
+	"description": "This repository contains the Netflix's catalog layout",
+	"dependencies": {
+		"browser-sync": "*",
+		"gulp-autoprefixer": "*",
+		"gulp-clean-css": "*",
+		"gulp-combine-mq": "*",
+		"gulp-concat": "*",
+		"gulp-notify": "*",
+		"gulp-plumber": "*",
+		"gulp-rename": "*",
+		"gulp-sass": "*",
+		"gulp-sourcemaps": "*",
+		"gulp-uglify": "*",
+		"gulp-util": "*",
+		"gulp": "*",
+		"run-sequence": "*",
+		"gulp-zip": "*"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gloriafercu/netflix-catalog.git"
+	},
+	"author": "Adalab",
+	"license": "MIT",
+	"homepage": "https://gloriafercu.github.io/netflix-catalog/"
+}
