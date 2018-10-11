@@ -1,0 +1,47 @@
+.header__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  background-color: $color-light;
+  padding: 18px 0;
+  @media  (min-width:1064px) {
+    padding: 26px 0;
+    height: 100px;
+  }
+  .general__container {
+    align-items: center;
+    justify-content: space-between;
+    .logo__netflix {
+      background-image: url($pathImages + 'logo-Netflix.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 104px;
+      height: 100%;
+      @media  (min-width: 1064px) {
+        width: 133px;
+        height: 100%;
+      }
+    } 
+  }
+}
+
+.suscription__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .profile.hidden {
+    display: none;
+    @media  (min-width: 1064px) {
+      display: block;
+      color: $color-dark;
+      font-size: $font-size-xs;
+      font-weight: $font-weight-bold;
+      line-height: $line-height-s;
+    }
+  }
+}
+

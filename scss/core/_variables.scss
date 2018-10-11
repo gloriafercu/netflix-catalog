@@ -11,9 +11,23 @@ $color-secundary: #5e000b;
 $font-lato: 'Lato', sans-serif;
 $font-montserrat: 'Montserrat', sans-serif;
 
-$font-size: 15px;
-$line-height: 1;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$letter-spacing: 0;
+$font-size-xxxs: 14px;
+$font-size-xxs: 15px;
+$font-size-xs: 16px;
+$font-size-s: 17px;
+$font-size-m: 18px;
+$font-size-l: 20px;
+$font-size-xl: 22px;
+$font-size-xxl: 26px;
+
+
+$line-height-s: 16px;
+
+
+
+$font-weight-bold: 700;
+
+
+// images
+
+$pathImages: './../../images/';

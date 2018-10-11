@@ -1,8 +1,3 @@
-body {
-  background: url('../images/logo-adalab-80px.png') center center no-repeat;
-  height: 100vh;
-}
-
 // Core
 @import 'core/variables';
 @import 'core/mixins';
@@ -14,3 +9,8 @@ body {
 
 // Components
 @import 'components/typography';
+@import 'components/buttons';
+@import 'components/menu';
+
+// Pages
+@import 'pages/home';

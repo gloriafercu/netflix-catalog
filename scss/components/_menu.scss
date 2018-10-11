@@ -1,0 +1,27 @@
+.menu__nav {
+  display: flex;
+  .menu__nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    font-size: $font-size-xxs;
+    line-height: $line-height-s;
+    overflow-y: auto;
+    @media  (min-width: 1064px) {
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+.menu__nav__item {
+  cursor: pointer;
+  &.actived {
+    color: $color-dark;
+  }
+  &:hover {
+    color: $color-dark;
+  }
+}
+

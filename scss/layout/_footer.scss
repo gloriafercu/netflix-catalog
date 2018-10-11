@@ -1,0 +1,8 @@
+.footer__container {
+  width: 100%;
+  height: 100px;
+  background-color: $color-light-midtone;
+  @media  (min-width: 1064px) {
+    height: 115px;
+  }
+}

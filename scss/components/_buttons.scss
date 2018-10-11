@@ -1,0 +1,16 @@
+.btn__suscribe {
+  background-color: $color-primary;
+  color: $color-light;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: $font-size-xxxs;
+  line-height: $line-height-s;
+  cursor: pointer;
+  @media  (min-width:1064px) {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-s;
+    padding: 15px 20px;
+    margin-left: 36px;
+  }
+}
