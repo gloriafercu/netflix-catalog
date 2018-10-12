@@ -1,7 +1,8 @@
+
 .grid__container {
   display: grid;
   margin: 41px 0 92px;
-  @media  (min-width: 1064px) {
+  @media  #{$desktop}  {
     margin: 70px 0 172px;
   }
 }
@@ -11,7 +12,7 @@
   font-weight: $font-weight-bold;
   color: $color-secundary;
   margin-bottom: 35px;
-  @media  (min-width: 1064px) {
+  @media #{$desktop} {
     margin-bottom: 43px;
   }
 }
@@ -24,8 +25,8 @@
   &.big__title { 
     font-size: $font-size-xl;
     line-height: $line-height;
-    @media  (min-width: 1064px) {
-      font-size: $font-size-xxxs;
+    @media  #{$desktop}  {
+      font-size: $font-size-micro;
       line-height: $line-height-s;
     }
   }
@@ -37,12 +38,12 @@
 }
 
 .paragrah__text {
-  font-size: $font-size-xxs;
+  font-size: $font-size-mini;
   line-height: $line-height-m;
   margin: 10px 0;
   &.desktop {
-    @media  (min-width: 1064px) {
-      font-size: $font-size-xxxs;
+    @media  #{$desktop}  {
+      font-size: $font-size-micro;
       line-height: $line-height-s;
     }
   } 
@@ -52,7 +53,7 @@
   display: flex;
   align-items: flex-start;
   margin: 10px 0 62px;
-  @media  (min-width: 1064px) {
+  @media  #{$desktop}  {
     margin-top: 15px;
   }
   .user {
@@ -62,24 +63,24 @@
     font-weight: $font-weight-bold;
     line-height: $line-height-m;
     &.desktop  {
-      @media  (min-width: 1064px) {
-        font-size: $font-size-xxs;
+      @media  #{$desktop}  {
+        font-size: $font-size-mini;
       }
     } 
   }
   .date {
-    font-size: $font-size-xxxs;
+    font-size: $font-size-micro;
     line-height: $line-height-m;
     &.desktop  {
-      @media  (min-width: 1064px) {
-        font-size: $font-size-mini;
+      @media  #{$desktop}  {
+        font-size: $font-size-nano;
       }
     }
   }
 }
 .see-more-articles {
   margin-bottom: 80px;
-  @media  (min-width: 1064px) {
+  @media  #{$desktop}  {
     margin-bottom: 120px;
   }
 }
@@ -88,4 +89,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__article {
+
 }

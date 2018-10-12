@@ -6,10 +6,10 @@
     justify-content: space-between;
     list-style-type: none;
     width: 100%;
-    font-size: $font-size-xxs;
+    font-size: $font-size-mini;
     line-height: $line-height-xs;
     overflow-y: auto;
-    @media  (min-width: 1064px) {
+    @media  #{$desktop} {
       font-size: $font-size-xs;
     }
   }

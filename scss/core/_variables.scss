@@ -11,9 +11,9 @@ $color-secundary: #5e000b;
 $font-lato: 'Lato', sans-serif;
 $font-montserrat: 'Montserrat', sans-serif;
 
-$font-size-mini: 13px;
-$font-size-xxxs: 14px;
-$font-size-xxs: 15px;
+$font-size-nano: 13px;
+$font-size-micro: 14px;
+$font-size-mini: 15px;
 $font-size-xs: 16px;
 $font-size-s: 17px;
 $font-size-m: 18px;
@@ -30,6 +30,9 @@ $line-height-xl: 26px;
 
 $font-weight-bold: 700;
 
-// images
-
+// Path images
 $pathImages: './../../images/';
+
+// Breakpoints
+$desktop : '(min-width: 1064px)';
+
