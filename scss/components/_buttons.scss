@@ -4,12 +4,12 @@
   padding: 10px 15px;
   border-radius: 5px;
   font-size: $font-size-xxxs;
-  line-height: $line-height-s;
+  line-height: \$line\-height\-xs;
   cursor: pointer;
   @media  (min-width:1064px) {
     font-size: $font-size-xs;
     font-weight: $font-weight-bold;
-    line-height: $line-height-s;
+    line-height: $line-height-xs;
     padding: 15px 20px;
     margin-left: 36px;
   }
