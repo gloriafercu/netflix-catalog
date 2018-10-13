@@ -8,8 +8,8 @@
     width: 100%;
     font-size: $font-size-mini;
     line-height: $line-height-xs;
-    overflow-y: auto;
-    @media  #{$desktop} {
+    overflow: hidden;
+    @media #{$desktop} {
       font-size: $font-size-xs;
     }
   }

@@ -7,6 +7,7 @@
   display: flex;
   background-color: $color-light;
   padding: 18px 0;
+  z-index: 1;
   @media  (min-width:1064px) {
     padding: 26px 0;
     height: 100px;
@@ -21,7 +22,7 @@
       background-repeat: no-repeat;
       width: 104px;
       height: 100%;
-      @media  #{$desktop}  {
+      @media #{$desktop}  {
         width: 133px;
         height: 100%;
       }
@@ -35,7 +36,7 @@
   justify-content: space-between;
   .profile.hidden {
     display: none;
-    @media  #{$desktop}  {
+    @media #{$desktop}  {
       display: block;
       color: $color-dark;
       font-size: $font-size-xs;

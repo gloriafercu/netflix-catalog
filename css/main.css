@@ -154,6 +154,7 @@ summary {
   display: flex;
   background-color: #ffffff;
   padding: 18px 0;
+  z-index: 1;
 }
 
 .header__container .general__container {
@@ -198,32 +199,53 @@ summary {
 
 .grid__container {
   display: grid;
-  margin: 41px 0 92px;
+  margin: 40px 0 92px;
+}
+
+.section__container {
+  margin-bottom: 80px;
+}
+
+.section__container:last-child {
+  margin-bottom: 0;
 }
 
 .section__title {
-  font-size: 16px;
-  font-weight: 700;
+  line-height: 16px;
   color: #5e000b;
   margin-bottom: 35px;
 }
 
-.article__title {
-  font-family: "Montserrat", sans-serif;
-  color: #4a4a4a;
-  font-size: 18px;
-  line-height: 24px;
+.section__title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.article__title.big__title {
-  font-size: 22px;
-  line-height: 1;
+.article__container {
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.article__container:last-child {
+  margin-bottom: 0;
+}
+
+.article__container .article__title {
+  color: #4a4a4a;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.article__container .article__title.xl__title-mobile {
+  line-height: 26px;
 }
 
 .paragrah__text {
-  font-size: 15px;
   line-height: 22px;
-  margin: 10px 0;
 }
 
 .info-post {
@@ -233,36 +255,151 @@ summary {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 10px 0 62px;
+  margin-top: 15px;
 }
 
 .info-post .user {
   margin-right: 20px;
   color: #d0021b;
-  font-size: 17px;
-  font-weight: 700;
   line-height: 22px;
 }
 
 .info-post .date {
-  font-size: 14px;
   line-height: 22px;
 }
 
-.see-more-articles {
-  margin-bottom: 80px;
+.see-more-articles,.see-more {
+  color: #000000;
+  line-height: normal;
 }
 
-.section__title__container {
+.article__img {
+  display: none;
+}
+
+.article__img.only-mobile {
+  display: block;
+}
+
+.header__row__reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.xl__img-mobile {
+  background-image: url("./../../images/netflixblackandwhite.png");
+  background-size: cover;
+  background-position: center -70px;
+  background-repeat: no-repeat;
+  margin-bottom: 21px;
+  width: 100%;
+  position: relative;
+}
+
+.xl__img-mobile:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 32.92683%;
+}
+
+.s__img-mobile {
+  background-image: url("./../../images/spiderman.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 90px;
+  position: relative;
+}
+
+.s__img-mobile:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 92.22222%;
+}
+
+.title__left-mobile {
+  width: 64%;
+}
+
+.column__left-mobile {
+  width: 64%;
+  position: absolute;
+  top: 55px;
+}
+
+.truncate__3lines {
+  overflow: hidden;
+  line-height: 1em;
+  max-height: 4em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.truncate__2lines {
+  overflow: hidden;
+  line-height: 1em;
+  max-height: 4em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.footer__left-mobile {
+  margin-top: 55px;
+}
+
+.section__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.article__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.article__title.xl__title-mobile {
+  font-size: 22px;
+}
+
+.paragrah__text {
+  font-size: 15px;
+}
+
+.user {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.see-more-articles {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.see-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .btn__suscribe {
@@ -271,7 +408,7 @@ summary {
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px;
-  line-height: \$line\-height\-xs;
+  line-height: 16px;
   cursor: pointer;
 }
 
@@ -295,7 +432,7 @@ summary {
   width: 100%;
   font-size: 15px;
   line-height: 16px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .menu__nav__item {
@@ -379,37 +516,47 @@ summary {
   }
 
   .grid__container {
-    margin: 70px 0 172px;
+    margin-top: 70px 0 173px;
+  }
+
+  .section__container {
+    margin-bottom: 120px;
   }
 
   .section__title {
     margin-bottom: 43px;
   }
 
-  .article__title.big__title {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .paragrah__text.desktop {
-    font-size: 14px;
-    line-height: 20px;
+  .article__container {
+    margin-bottom: 75px;
   }
 
   .info-post {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
-  .info-post .user.desktop {
+  .article__img.only-mobile {
+    display: none;
+  }
+
+  .section__title {
+    font-size: 22px;
+  }
+
+  .user {
     font-size: 15px;
   }
 
-  .info-post .date.desktop {
+  .date {
     font-size: 13px;
   }
 
   .see-more-articles {
-    margin-bottom: 120px;
+    font-size: 18px;
+  }
+
+  .see-more {
+    font-size: 18px;
   }
 
   .btn__suscribe {

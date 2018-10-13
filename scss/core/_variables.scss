@@ -5,7 +5,7 @@ $color-midtone: #9b9b9b;
 $color-dark-midtone: #4a4a4a;
 $color-dark: #000000;
 $color-primary: #d0021b;
-$color-secundary: #5e000b;
+$color-secondary: #5e000b;
 
 // Fonts
 $font-lato: 'Lato', sans-serif;
@@ -21,13 +21,17 @@ $font-size-l: 20px;
 $font-size-xl: 22px;
 $font-size-xxl: 26px;
 
-$line-height: 1;
+
+//chequear lineheigh
+$line-height: normal;// no usar
+
 $line-height-xs: 16px;
 $line-height-s: 20px;
 $line-height-m: 22px;
 $line-height-l: 24px;
 $line-height-xl: 26px;
 
+$font-weight-regular: 400;
 $font-weight-bold: 700;
 
 // Path images

@@ -13,3 +13,10 @@
     padding-top: ($height / $width) * 100%;
   }
 }
+
+@mixin truncate-paragraphs($line-clamp) {
+  overflow: hidden;
+  line-height: 1em; 
+  max-height: 4em; 
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line-clamp;
+}
