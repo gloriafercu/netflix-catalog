@@ -11,7 +11,7 @@
     color: $color-dark-midtone;
     line-height: $line-height-l;
     margin-bottom: 5px;
-    &.xl__title-mobile { 
+    &.xl__title--mobile { 
       line-height: $line-height-xl;
     }
   }
@@ -21,7 +21,7 @@
   line-height: $line-height-m;
 }
 
-.info-post {
+.info--post {
   display: flex;
   align-items: flex-start;
   margin-top: 15px;
@@ -44,25 +44,21 @@
   line-height: $line-height;
 }
 
-
 .article__img {
-  display: none;
-  &.only-mobile {
-    display: block;
-    @media #{$desktop} {
-      display: none;
-    }
-  } 
+  
 }
 
-.header__row__reverse {
+.header__row--reverse {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: space-between;  
+  @media #{$desktop}  {
+    flex-direction: row;
+  }
 }
 
-.xl__img-mobile {
+.xl__img--mobile {
   background-image: url($pathImages + 'netflixblackandwhite.png');
   background-size: cover;
   background-position: center -70px;
@@ -72,33 +68,39 @@
   @include aspect-ratio(328px, 108px);
 }
 
-.s__img-mobile {
+.s__img--mobile {
   background-image: url($pathImages + 'spiderman.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  width: 90px;
+  min-width: 90px;
   @include aspect-ratio(90px, 83px);
 }
 
 
 .title__left-mobile {
-  width: 64%;
+  width: calc(100% - 100px);
 }
 
-.column__left-mobile {
-  width: 64%;
+.column__left--mobile {
+  width: calc(100% - 100px);
   position: absolute;
   top: 55px; 
-}
-.truncate__3lines {
-  @include truncate-paragraphs(3); 
+  @media #{$desktop}  {
+    position: relative;
+    top: inherit;
+  }
 }
 
-.truncate__2lines {
-  @include truncate-paragraphs(2); 
+.block__ellipsis--3lines {
+  @include ellipsis-paragraphs(3); 
 }
-.footer__left-mobile {
+
+.block__ellipsis--2lines {
+  @include ellipsis-paragraphs(2); 
+}
+
+.footer__left--mobile {
   margin-top: 55px;
 }
 

@@ -14,9 +14,13 @@
   }
 }
 
-@mixin truncate-paragraphs($line-clamp) {
+@mixin ellipsis-paragraphs($line-clamp) {
+  display: -webkit-box;
+  max-width: 100%;
+  height: ($line-clamp*14) + 1;
+  line-height: 1;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1em; 
-  max-height: 4em; 
-  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line-clamp;
+  text-overflow: ellipsis;
 }

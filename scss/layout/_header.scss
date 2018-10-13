@@ -8,7 +8,7 @@
   background-color: $color-light;
   padding: 18px 0;
   z-index: 1;
-  @media  (min-width:1064px) {
+  @media #{$desktop} {
     padding: 26px 0;
     height: 100px;
   }
@@ -22,6 +22,7 @@
       background-repeat: no-repeat;
       width: 104px;
       height: 100%;
+      @include aspect-ratio(523px,360px);
       @media #{$desktop}  {
         width: 133px;
         height: 100%;

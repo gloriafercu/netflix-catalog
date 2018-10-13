@@ -1,0 +1,17 @@
+.only__mobile {
+    display: block;
+    @media #{$desktop} {
+      display: none;
+    }
+  } 
+
+  .only__desktop {
+    display: none;
+    @media #{$desktop} {
+      display: block;
+    }
+  } 
+
+  .hidden{
+    display:none;
+  }
