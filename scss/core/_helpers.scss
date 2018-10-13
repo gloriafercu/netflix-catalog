@@ -1,17 +1,23 @@
 .only__mobile {
-    display: block;
-    @media #{$desktop} {
-      display: none;
-    }
-  } 
-
-  .only__desktop {
+  display: block;
+  @media #{$desktop} {
     display: none;
-    @media #{$desktop} {
-      display: block;
-    }
-  } 
-
-  .hidden{
-    display:none;
   }
+} 
+
+.only__desktop {
+  display: none;
+  @media #{$desktop} {
+    display: block;
+  }
+} 
+
+.hidden{
+  display: none;
+}
+
+.opacity--zero {
+  @media #{$desktop} {
+  opacity: 0;
+  }
+}

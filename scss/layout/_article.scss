@@ -5,7 +5,7 @@
     margin-bottom: 0;
   }
   @media  #{$desktop}  {
-    margin-bottom: 75px;
+    margin-bottom: 0px;
   }
   .article__title {
     color: $color-dark-midtone;
@@ -44,21 +44,19 @@
   line-height: $line-height;
 }
 
-.article__img {
-  
-}
-
 .header__row--reverse {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: space-between;  
-  @media #{$desktop}  {
-    flex-direction: row;
-  }
 }
 
-.xl__img--mobile {
+.article__img {
+  border-radius: 5px;
+}
+
+.xl__img {
   background-image: url($pathImages + 'netflixblackandwhite.png');
   background-size: cover;
   background-position: center -70px;
@@ -68,39 +66,128 @@
   @include aspect-ratio(328px, 108px);
 }
 
-.s__img--mobile {
+.s__img {
   background-image: url($pathImages + 'spiderman.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   min-width: 90px;
   @include aspect-ratio(90px, 83px);
+  @media #{$desktop}  {
+    min-width: 74px;
+    margin-bottom: 11px;
+    @include aspect-ratio(1, 1);
+    &.img__absoluted {
+      position: absolute;
+      top: 60px;
+    }
+  } 
 }
 
-
-.title__left-mobile {
+.title__left {
   width: calc(100% - 100px);
+  @media #{$desktop}  {
+    width: 100%;
+  }
 }
 
-.column__left--mobile {
+.paragraph__left {
+  @media #{$desktop}  {
+    width: 100%;
+    width: calc(100% - 90px);
+  }
+}
+
+.column__left {
   width: calc(100% - 100px);
   position: absolute;
   top: 55px; 
   @media #{$desktop}  {
     position: relative;
     top: inherit;
+    width: 100%;  
   }
 }
 
-.block__ellipsis--3lines {
-  @include ellipsis-paragraphs(3); 
-}
-
-.block__ellipsis--2lines {
-  @include ellipsis-paragraphs(2); 
-}
-
-.footer__left--mobile {
+.footer__left {
   margin-top: 55px;
 }
 
+.section__article {
+  @include ellipsis-paragraphs(3);
+  &.block__ellipsis--2lines {
+    @include ellipsis-paragraphs(2); 
+  }
+}
+
+.section__article {
+  @media #{$desktop}  {
+    &.block__ellipsis--5lines {
+      @include ellipsis-paragraphs(5); 
+    }
+  }
+}
+
+.section__container.classic-films {
+  .article__title {
+    @media #{$desktop}  {
+      font-size: $font-size-xxl;
+      line-height: $line-height-xxl;
+    } 
+  }
+  .article__container:nth-child(odd) {
+    .article__title {
+      @media #{$desktop}  {
+        font-size: $font-size-xl;    
+      }
+    }
+  }
+  .article__container:nth-child(4) {
+    .section__article {
+      @media #{$desktop}  {
+        &.block__ellipsis--3lines {
+          @include ellipsis-paragraphs(3); 
+        }
+      }
+    }
+  }
+  .article__container:nth-child(4) {
+    @media #{$desktop}  {
+      margin-top: 91px;
+    }
+  }
+  .article__container:nth-child(6) {
+    @media #{$desktop}  {
+      margin-top: 71px;
+    }
+  }
+  .article__container:nth-child(7) {
+    @media #{$desktop}  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.section__container.series-tv {
+  .article__container:nth-child(2),
+  .article__container:nth-child(5) {
+    .section__article {
+      @media #{$desktop}  {
+        &.block__ellipsis--2lines {
+          @include ellipsis-paragraphs(2); 
+        }
+      }
+    }
+  }
+  .article__container:nth-child(4) {
+    .section__article {
+      @media #{$desktop}  {
+        &.block__ellipsis--4lines {
+          @include ellipsis-paragraphs(4); 
+        }
+      }
+    }
+  }
+}

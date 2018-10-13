@@ -1,7 +1,7 @@
 @mixin grid-columns($col, $gap) {
   display: grid;
   grid-template-columns: repeat(#{$col}, 1fr);
-  grid-gap: ($gap);
+  grid-column-gap: ($gap);
 }
 
 @mixin aspect-ratio($width, $height) {

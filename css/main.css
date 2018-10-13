@@ -222,6 +222,22 @@ summary {
   margin: 40px 0 92px;
 }
 
+.main__section--desktop {
+  display: grid;
+}
+
+.section__container.classic-films {
+  display: grid;
+}
+
+.section__container.series-tv {
+  display: grid;
+}
+
+.container__articles__grid {
+  display: grid;
+}
+
 .section__container {
   margin-bottom: 80px;
 }
@@ -294,6 +310,7 @@ summary {
 }
 
 .header__row--reverse {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,7 +326,11 @@ summary {
   justify-content: space-between;
 }
 
-.xl__img--mobile {
+.article__img {
+  border-radius: 5px;
+}
+
+.xl__img {
   background-image: url("./../../images/netflixblackandwhite.png");
   background-size: cover;
   background-position: center -70px;
@@ -319,14 +340,14 @@ summary {
   position: relative;
 }
 
-.xl__img--mobile:before {
+.xl__img:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 32.92683%;
 }
 
-.s__img--mobile {
+.s__img {
   background-image: url("./../../images/spiderman.png");
   background-size: cover;
   background-position: center top;
@@ -335,24 +356,28 @@ summary {
   position: relative;
 }
 
-.s__img--mobile:before {
+.s__img:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 92.22222%;
 }
 
-.title__left-mobile {
+.title__left {
   width: calc(100% - 100px);
 }
 
-.column__left--mobile {
+.column__left {
   width: calc(100% - 100px);
   position: absolute;
   top: 55px;
 }
 
-.block__ellipsis--3lines {
+.footer__left {
+  margin-top: 55px;
+}
+
+.section__article {
   display: -webkit-box;
   max-width: 100%;
   height: 43;
@@ -363,7 +388,7 @@ summary {
   text-overflow: ellipsis;
 }
 
-.block__ellipsis--2lines {
+.section__article.block__ellipsis--2lines {
   display: -webkit-box;
   max-width: 100%;
   height: 29;
@@ -372,10 +397,6 @@ summary {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.footer__left--mobile {
-  margin-top: 55px;
 }
 
 .section__title {
@@ -516,6 +537,10 @@ summary {
     display: block;
   }
 
+  .opacity--zero {
+    opacity: 0;
+  }
+
   .header__container {
     padding: 26px 0;
     height: 100px;
@@ -539,35 +564,151 @@ summary {
   }
 
   .grid__container {
-    margin-top: 70px 0 173px;
+    margin: 70px 0 173px;
+  }
+
+  .main__section--desktop {
+    grid-template-columns: 734px 238px;
+    grid-column-gap: 92px;
+  }
+
+  .section__container.classic-films {
+    grid-template-columns: 330px 313px;
+    grid-column-gap: 91px;
+  }
+
+  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
+    grid-column: span 2;
+  }
+
+  .container__articles__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 37px;
   }
 
   .section__container {
-    margin-bottom: 120px;
+    margin-bottom: 111px;
   }
 
-  .section__title {
-    margin-bottom: 43px;
+  .section__title.aside {
+    line-height: 30px;
+    margin-bottom: -27px;
   }
 
   .article__container {
-    margin-bottom: 75px;
+    margin-bottom: 0px;
   }
 
   .info--post {
     margin-top: 10px;
   }
 
-  .header__row--reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+  .s__img {
+    min-width: 74px;
+    margin-bottom: 11px;
+    position: relative;
   }
 
-  .column__left--mobile {
+  .s__img:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .s__img.img__absoluted {
+    position: absolute;
+    top: 60px;
+  }
+
+  .title__left {
+    width: 100%;
+  }
+
+  .paragraph__left {
+    width: 100%;
+    width: calc(100% - 90px);
+  }
+
+  .column__left {
     position: relative;
     top: inherit;
+    width: 100%;
+  }
+
+  .section__article.block__ellipsis--5lines {
+    display: -webkit-box;
+    max-width: 100%;
+    height: 71;
+    line-height: 1;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section__container.classic-films .article__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .section__container.classic-films .article__container:nth-child(odd) .article__title {
+    font-size: 22px;
+  }
+
+  .section__container.classic-films .article__container:nth-child(4) .section__article.block__ellipsis--3lines {
+    display: -webkit-box;
+    max-width: 100%;
+    height: 43;
+    line-height: 1;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section__container.classic-films .article__container:nth-child(4) {
+    margin-top: 91px;
+  }
+
+  .section__container.classic-films .article__container:nth-child(6) {
+    margin-top: 71px;
+  }
+
+  .section__container.classic-films .article__container:nth-child(7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .section__container.series-tv .article__container:nth-child(2) .section__article.block__ellipsis--2lines,.section__container.series-tv .article__container:nth-child(5) .section__article.block__ellipsis--2lines {
+    display: -webkit-box;
+    max-width: 100%;
+    height: 29;
+    line-height: 1;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section__container.series-tv .article__container:nth-child(4) .section__article.block__ellipsis--4lines {
+    display: -webkit-box;
+    max-width: 100%;
+    height: 57;
+    line-height: 1;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .section__title {
