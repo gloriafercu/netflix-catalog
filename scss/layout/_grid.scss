@@ -14,6 +14,17 @@
   }
 }
 
+.section__container {
+  margin-bottom: 80px;
+  @media #{$desktop}  {
+    margin-bottom: 111px;
+  }
+}
+
+.section__container:last-child {
+  margin-bottom: 0;
+}
+
 .section__container.classic-films {
   display: grid;
   @media #{$desktop}  {
@@ -34,17 +45,8 @@
   display: grid;
   @media #{$desktop}  {
     @include grid-columns(4, 37px);
+    grid-row-gap: 75px;
   }
-}
-
-.section__container {
-  margin-bottom: 80px;
-  @media #{$desktop}  {
-    margin-bottom: 111px;
-  }
-}
-.section__container:last-child {
-  margin-bottom: 0;
 }
 
 .section__title {

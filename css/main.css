@@ -226,6 +226,14 @@ summary {
   display: grid;
 }
 
+.section__container {
+  margin-bottom: 80px;
+}
+
+.section__container:last-child {
+  margin-bottom: 0;
+}
+
 .section__container.classic-films {
   display: grid;
 }
@@ -236,14 +244,6 @@ summary {
 
 .container__articles__grid {
   display: grid;
-}
-
-.section__container {
-  margin-bottom: 80px;
-}
-
-.section__container:last-child {
-  margin-bottom: 0;
 }
 
 .section__title {
@@ -572,6 +572,10 @@ summary {
     grid-column-gap: 92px;
   }
 
+  .section__container {
+    margin-bottom: 111px;
+  }
+
   .section__container.classic-films {
     grid-template-columns: 330px 313px;
     grid-column-gap: 91px;
@@ -585,10 +589,7 @@ summary {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 37px;
-  }
-
-  .section__container {
-    margin-bottom: 111px;
+    grid-row-gap: 75px;
   }
 
   .section__title.aside {
@@ -643,6 +644,17 @@ summary {
     height: 71;
     line-height: 1;
     -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section__article.block__ellipsis--4lines {
+    display: -webkit-box;
+    max-width: 100%;
+    height: 57;
+    line-height: 1;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
