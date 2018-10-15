@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "This repository contains the Netflix's catalog layout",
 	"dependencies": {
-		"browser-sync": "*",
+		"browser-sync": "^2.26.3",
 		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
