@@ -13,8 +13,7 @@
     height: 100px;
   }
   .general__container {
-    align-items: center;
-    justify-content: space-between;
+    @include flex(center, space-between);
     .logo__netflix {
       background-image: url($pathImages + 'logo-Netflix.png');
       background-size: cover;
@@ -32,12 +31,9 @@
 }
 
 .suscription__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .profile.hidden {
-    display: none;
-    @media #{$desktop}  {
+  @include flex(center, space-between);
+  .profile {
+    @media #{$desktop} {
       display: block;
       color: $color-dark;
       font-size: $font-size-xs;

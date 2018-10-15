@@ -53,10 +53,8 @@
 
 .header__row--reverse {
   position: relative;
-  display: flex;
+  @include flex(flex-start, space-between);
   flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: space-between;  
 }
 
 .article__img {

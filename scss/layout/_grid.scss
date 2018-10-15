@@ -43,7 +43,7 @@
   }
 }
 .section__container.documentals {
-  margin-bottom:0;
+  margin-bottom: 0;
   @media #{$desktop}  {
     margin-bottom:80px;
 
@@ -57,9 +57,8 @@
   display: grid;
   margin-bottom: -80px;
   @media #{$desktop}  {
-    @include grid-columns(4, 37px);
-    grid-row-gap: 75px;
-    margin-bottom:0;
+    @include grid-columns(4, 37px, 75px);
+    margin-bottom: 0;
   }
   
 }

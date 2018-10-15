@@ -19,9 +19,7 @@
       transform: rotate(-45deg);
     }
     @media #{$desktop} {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex(center, space-between);
       list-style-type: none;
       width: 100%;
       padding: 0;
