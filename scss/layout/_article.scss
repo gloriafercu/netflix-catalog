@@ -4,14 +4,14 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media  #{$desktop}  {
+  @media #{$desktop}  {
     margin-bottom: 0px;
   }
   .article__title {
     color: $color-dark-midtone;
     line-height: $line-height-l;
     margin-bottom: 5px;
-    &.xl__title--mobile { 
+    &.xl__title { 
       line-height: $line-height-xl;
     }
   }
@@ -25,7 +25,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 15px;
-  @media  #{$desktop}  {
+  @media #{$desktop}  {
     margin-top: 10px;
   }
   .user {
@@ -42,6 +42,13 @@
 .see-more {
   color: $color-dark;
   line-height: $line-height;
+}
+
+.see-more-articles{
+  margin-bottom: 80px;
+  @media #{$desktop} {
+    margin-bottom: 0;
+  }
 }
 
 .header__row--reverse {
@@ -114,19 +121,16 @@
 }
 
 .section__article {
-  @include ellipsis-paragraphs(3);
-  &.block__ellipsis--2lines {
-    @include ellipsis-paragraphs(2); 
+  @include ellipsis(3);
+  &.ellipsis--2lines {
+    @include ellipsis(2); 
   }
-}
-
-.section__article {
   @media #{$desktop}  {
-    &.block__ellipsis--5lines {
-      @include ellipsis-paragraphs(5); 
+    &.ellipsis--5lines {
+      @include ellipsis(5); 
     }
-    &.block__ellipsis--4lines {
-      @include ellipsis-paragraphs(4); 
+    &.ellipsis--4lines {
+      @include ellipsis(4); 
     }
   }
 }
@@ -148,8 +152,8 @@
   .article__container:nth-child(4) {
     .section__article {
       @media #{$desktop}  {
-        &.block__ellipsis--3lines {
-          @include ellipsis-paragraphs(3); 
+        &.ellipsis--3lines {
+          @include ellipsis(3); 
         }
       }
     }
@@ -178,8 +182,8 @@
   .article__container:nth-child(5) {
     .section__article {
       @media #{$desktop}  {
-        &.block__ellipsis--2lines {
-          @include ellipsis-paragraphs(2); 
+        &.ellipsis--2lines {
+          @include ellipsis(2); 
         }
       }
     }
@@ -187,8 +191,8 @@
   .article__container:nth-child(4) {
     .section__article {
       @media #{$desktop}  {
-        &.block__ellipsis--4lines {
-          @include ellipsis-paragraphs(4); 
+        &.ellipsis--4lines {
+          @include ellipsis(4); 
         }
       }
     }

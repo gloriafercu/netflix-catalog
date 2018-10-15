@@ -1,4 +1,4 @@
-.btn__suscribe {
+.btn__subscribe {
   background-color: $color-primary;
   color: $color-light;
   padding: 10px 15px;
@@ -7,8 +7,6 @@
   line-height: $line-height-xs;
   cursor: pointer;
   @media #{$desktop} {
-    font-size: $font-size-xs;
-    font-weight: $font-weight-bold;
     line-height: $line-height-xs;
     padding: 15px 20px;
     margin-left: 36px;

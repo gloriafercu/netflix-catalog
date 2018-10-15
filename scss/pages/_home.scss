@@ -15,7 +15,7 @@
 .main__container {
   flex: 1;
   margin-top: 104px;
-  @media  #{$desktop}  {
+  @media #{$desktop}  {
     margin-top: 136px;
   }
   .general__container {
@@ -29,7 +29,7 @@
   padding: 0 15px;
   margin: 0 auto;
   max-width: 360px;
-  @media  #{$desktop}  {
+  @media #{$desktop}  {
     width: 100%;
     max-width: 1064px;
     padding: 0;

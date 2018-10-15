@@ -4,6 +4,7 @@
 	"description": "This repository contains the Netflix's catalog layout",
 	"dependencies": {
 		"browser-sync": "*",
+		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
 		"gulp-combine-mq": "*",
@@ -15,9 +16,8 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify": "*",
 		"gulp-util": "*",
-		"gulp": "*",
-		"run-sequence": "*",
-		"gulp-zip": "*"
+		"gulp-zip": "*",
+		"run-sequence": "*"
 	},
 	"devDependencies": {},
 	"scripts": {
@@ -27,7 +27,6 @@
 		"type": "git",
 		"url": "git+https://github.com/gloriafercu/netflix-catalog.git"
 	},
-	"author": "Adalab",
-	"license": "MIT",
+	"author": "Gloria",
 	"homepage": "https://gloriafercu.github.io/netflix-catalog/"
 }

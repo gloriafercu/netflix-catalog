@@ -10,7 +10,7 @@
   font-family: $font-montserrat;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
-  &.xl__title--mobile {
+  &.xl__title {
     font-size: $font-size-xl;
   }
 }
@@ -49,5 +49,13 @@
   font-weight: $font-weight-regular;
   @media #{$desktop}  {
     font-size: $font-size-m;
+  }
+}
+
+.btn__subscribe {
+  font-size: $font-size-micro;
+  font-weight: $font-weight-bold;
+  @media #{$desktop} {
+    font-size: $font-size-xs;
   }
 }

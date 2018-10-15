@@ -14,10 +14,10 @@
   }
 }
 
-@mixin ellipsis-paragraphs($line-clamp) {
+@mixin ellipsis($line-clamp) {
   display: -webkit-box;
   max-width: 100%;
-  height: ($line-clamp*14) + 1;
+  height: ($line-clamp * 14) + 1;
   line-height: 1;
   -webkit-line-clamp: $line-clamp;
   -webkit-box-orient: vertical;
