@@ -179,7 +179,7 @@ summary {
 }
 
 .header__container .general__container .logo__netflix {
-  background-image: url("./../../images/logo-Netflix.png");
+  background-image: url("../images/logo-Netflix.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -354,7 +354,7 @@ summary {
 }
 
 .xl__img {
-  background-image: url("./../../images/netflixblackandwhite.png");
+  background-image: url("../images/netflixblackandwhite.png");
   background-size: cover;
   background-position: center -70px;
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ summary {
 }
 
 .s__img {
-  background-image: url("./../../images/spiderman.png");
+  background-image: url("../images/spiderman.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
