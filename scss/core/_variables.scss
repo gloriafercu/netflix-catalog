@@ -23,7 +23,7 @@ $font-size-xxl: 26px;
 
 $line-height: normal;
 $line-height-xs: 16px;
-$line-height-s: 20px;
+// $line-height-s: 20px;//No se usa
 $line-height-m: 22px;
 $line-height-l: 24px;
 $line-height-xl: 26px;
@@ -36,5 +36,6 @@ $font-weight-bold: 700;
 $pathImages: '../images/';
 
 // Breakpoints
+$tablet : '(min-width: 768px) and (max-width: 1063px)';
 $desktop : '(min-width: 1064px)';
 

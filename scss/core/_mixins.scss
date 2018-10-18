@@ -1,15 +1,15 @@
-@mixin grid-columns($col, $gap-column, $gap-row) {
+@mixin grid-columns($col, $gap-row, $gap-column) {
   display: grid;
   grid-template-columns: repeat(#{$col}, 1fr);
-  grid-column-gap: ($gap-column);
   grid-row-gap: ($gap-row);
+  grid-column-gap: ($gap-column);
 }
 
 @mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     padding-top: ($height / $width) * 100%;
   }

@@ -147,11 +147,7 @@ summary {
   display: block;
 }
 
-.only__desktop {
-  display: none;
-}
-
-.hidden {
+.not__mobile {
   display: none;
 }
 
@@ -193,7 +189,7 @@ summary {
 
 .header__container .general__container .logo__netflix:before {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   padding-top: 68.83365%;
 }
@@ -238,12 +234,12 @@ summary {
   margin-bottom: 0;
 }
 
-.section__container.documentals {
-  margin-bottom: 0;
-}
-
 .section__container.series-tv {
   display: grid;
+}
+
+.section__container.documentals {
+  margin-bottom: 0;
 }
 
 .container__articles__grid {
@@ -364,7 +360,7 @@ summary {
 
 .xl__img:before {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   padding-top: 32.92683%;
 }
@@ -380,7 +376,7 @@ summary {
 
 .s__img:before {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   padding-top: 92.22222%;
 }
@@ -471,7 +467,6 @@ summary {
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 14px;
   line-height: 16px;
   cursor: pointer;
 }
@@ -491,7 +486,7 @@ summary {
 }
 
 .menu__nav .menu__nav__container:after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   top: 2px;
@@ -563,12 +558,12 @@ summary {
   max-width: 360px;
 }
 
-@media (min-width: 1064px) {
+@media (min-width: 768px) and (max-width: 1063px), (min-width: 1064px) {
   .only__mobile {
     display: none;
   }
 
-  .only__desktop {
+  .not__mobile {
     display: block;
   }
 
@@ -586,14 +581,6 @@ summary {
     height: 100%;
   }
 
-  .suscription__container .profile {
-    display: block;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-  }
-
   .footer__container {
     height: 115px;
   }
@@ -602,44 +589,12 @@ summary {
     margin: 70px 0 173px;
   }
 
-  .main__section--desktop {
-    grid-template-columns: 734px 238px;
-    grid-column-gap: 92px;
-  }
-
   .section__container {
     margin-bottom: 111px;
   }
 
-  .section__container.classic-films {
-    grid-template-columns: 330px 313px;
-    grid-column-gap: 91px;
-    margin-bottom: 111px;
-  }
-
-  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
-    grid-column: span 2;
-  }
-
-  .section__container.classic-films .see-more-articles {
-    margin: 83px 0 0;
-  }
-
   .section__container.documentals {
     margin-bottom: 80px;
-  }
-
-  .container__articles__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 37px;
-    grid-row-gap: 75px;
-    margin-bottom: 0;
-  }
-
-  .section__title.aside {
-    line-height: 30px;
-    margin-bottom: -27px;
   }
 
   .article__container {
@@ -662,7 +617,7 @@ summary {
 
   .s__img:before {
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     padding-top: 100%;
   }
@@ -772,10 +727,6 @@ summary {
     text-overflow: ellipsis;
   }
 
-  .section__title {
-    font-size: 22px;
-  }
-
   .user {
     font-size: 15px;
   }
@@ -802,6 +753,107 @@ summary {
     margin-left: 36px;
   }
 
+  .main__container {
+    margin-top: 136px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1063px), (min-width: 768px) and (max-width: 1063px) {
+  .suscription__container .profile {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1063px) {
+  .section__container.classic-films {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 60px;
+  }
+
+  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
+    grid-column: span 2;
+  }
+
+  .section__container.classic-films .see-more-articles {
+    margin: 60px 0;
+  }
+
+  .section__container.series-tv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+  }
+
+  .section__container.series-tv .section__title,.section__container.series-tv .see-more-articles {
+    grid-column: span 2;
+  }
+
+  .section__container.series-tv .see-more-articles {
+    margin-bottom: 60px;
+  }
+
+  .section__container.series-tv .section__title {
+    margin-bottom: 0;
+  }
+
+  .container__articles__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+    margin-bottom: 0;
+  }
+
+  .general__container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1064px) {
+  .main__section--desktop {
+    grid-template-columns: 734px 238px;
+    grid-column-gap: 92px;
+  }
+
+  .section__container.classic-films {
+    grid-template-columns: 330px 313px;
+    grid-column-gap: 91px;
+    margin-bottom: 111px;
+  }
+
+  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
+    grid-column: span 2;
+  }
+
+  .section__container.classic-films .see-more-articles {
+    margin: 83px 0 0;
+  }
+
+  .container__articles__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 75px;
+    grid-column-gap: 37px;
+    margin-bottom: 0;
+  }
+
+  .section__title.aside {
+    line-height: 30px;
+    margin-bottom: -27px;
+  }
+
+  .section__title {
+    font-size: 22px;
+  }
+
   .menu__nav .menu__nav__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -824,14 +876,9 @@ summary {
     display: none;
   }
 
-  .main__container {
-    margin-top: 136px;
-  }
-
   .general__container {
     width: 100%;
     max-width: 1064px;
-    padding: 0;
   }
 }
 

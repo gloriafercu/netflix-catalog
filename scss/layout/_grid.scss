@@ -1,7 +1,7 @@
 .grid__container {
   display: grid;
   margin: 40px 0 92px;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     margin: 70px 0 173px;
   }
 }
@@ -16,7 +16,7 @@
 
 .section__container {
   margin-bottom: 80px;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     margin-bottom: 111px;
   }
 }
@@ -27,8 +27,18 @@
 
 .section__container.classic-films {
   display: grid;
-  margin-bottom:0;
-  @media #{$desktop}  {
+  margin-bottom: 0;
+  @media #{$tablet} {
+    @include grid-columns(2, 0px, 60px);
+    .section__title,
+    .see-more-articles {
+      grid-column: span 2;
+    }  
+    .see-more-articles {
+      margin: 60px 0;
+    }
+  }
+  @media #{$desktop} {
     grid-template-columns: 330px 313px;
     grid-column-gap: 91px;
     margin-bottom: 111px;
@@ -39,25 +49,48 @@
     .see-more-articles {
       margin: 83px 0 0;
     }  
-
   }
 }
-.section__container.documentals {
-  margin-bottom: 0;
-  @media #{$desktop}  {
-    margin-bottom:80px;
 
-  }
-}
+
 .section__container.series-tv {
   display: grid;
+  @media #{$tablet} {
+    @include grid-columns(2, 60px, 60px);
+    .section__title,
+    .see-more-articles {
+      grid-column: span 2;
+    }  
+    .see-more-articles {
+      margin-bottom: 60px;
+    }
+    .section__title {
+      margin-bottom: 0;
+    }
+  }
 }
+
+
+
+
+.section__container.documentals {
+  margin-bottom: 0;
+  @media #{$tablet}, #{$desktop}  {
+    margin-bottom: 80px;
+
+  }
+}
+
 
 .container__articles__grid {
   display: grid;
   margin-bottom: -80px;
+  @media #{$tablet}  {
+    @include grid-columns(2, 60px, 60px);
+    margin-bottom: 0;
+  }
   @media #{$desktop}  {
-    @include grid-columns(4, 37px, 75px);
+    @include grid-columns(4, 75px, 37px);
     margin-bottom: 0;
   }
   

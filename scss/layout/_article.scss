@@ -4,7 +4,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop} {
     margin-bottom: 0px;
   }
   .article__title {
@@ -25,7 +25,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 15px;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     margin-top: 10px;
   }
   .user {
@@ -46,7 +46,7 @@
 
 .see-more-articles{
   margin-bottom: 80px;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     margin-bottom: 0;
   }
 }
@@ -78,7 +78,7 @@
   background-repeat: no-repeat;
   min-width: 90px;
   @include aspect-ratio(90px, 83px);
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     min-width: 74px;
     margin-bottom: 11px;
     @include aspect-ratio(1, 1);
@@ -91,13 +91,13 @@
 
 .title__left {
   width: calc(100% - 100px);
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     width: 100%;
   }
 }
 
 .paragraph__left {
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     width: 100%;
     width: calc(100% - 90px);
   }
@@ -107,7 +107,7 @@
   width: calc(100% - 100px);
   position: absolute;
   top: 55px; 
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     position: relative;
     top: inherit;
     width: 100%;  
@@ -123,7 +123,7 @@
   &.ellipsis--2lines {
     @include ellipsis(2); 
   }
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     &.ellipsis--5lines {
       @include ellipsis(5); 
     }
@@ -135,21 +135,21 @@
 
 .section__container.classic-films {
   .article__title {
-    @media #{$desktop}  {
+    @media #{$tablet}, #{$desktop}  {
       font-size: $font-size-xxl;
       line-height: $line-height-xxl;
     } 
   }
   .article__container:nth-child(odd) {
     .article__title {
-      @media #{$desktop}  {
+      @media #{$tablet}, #{$desktop}  {
         font-size: $font-size-xl;    
       }
     }
   }
   .article__container:nth-child(4) {
     .section__article {
-      @media #{$desktop}  {
+      @media #{$tablet}, #{$desktop}  {
         &.ellipsis--3lines {
           @include ellipsis(3); 
         }
@@ -157,17 +157,17 @@
     }
   }
   .article__container:nth-child(4) {
-    @media #{$desktop}  {
+    @media #{$tablet}, #{$desktop}  {
       margin-top: 91px;
     }
   }
   .article__container:nth-child(6) {
-    @media #{$desktop}  {
+    @media #{$tablet}, #{$desktop}  {
       margin-top: 71px;
     }
   }
   .article__container:nth-child(7) {
-    @media #{$desktop}  {
+    @media #{$tablet}, #{$desktop}  {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -179,7 +179,7 @@
   .article__container:nth-child(2),
   .article__container:nth-child(5) {
     .section__article {
-      @media #{$desktop}  {
+      @media #{$tablet}, #{$desktop}  {
         &.ellipsis--2lines {
           @include ellipsis(2); 
         }
@@ -188,7 +188,7 @@
   }
   .article__container:nth-child(4) {
     .section__article {
-      @media #{$desktop}  {
+      @media #{$tablet}, #{$desktop}  {
         &.ellipsis--4lines {
           @include ellipsis(4); 
         }

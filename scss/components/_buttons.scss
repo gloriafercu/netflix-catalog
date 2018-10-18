@@ -3,10 +3,9 @@
   color: $color-light;
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: $font-size-micro;
   line-height: $line-height-xs;
   cursor: pointer;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     line-height: $line-height-xs;
     padding: 15px 20px;
     margin-left: 36px;

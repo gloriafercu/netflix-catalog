@@ -1,23 +1,19 @@
 .only__mobile {
   display: block;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     display: none;
   }
 } 
 
-.only__desktop {
+.not__mobile {
   display: none;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     display: block;
   }
 } 
 
-.hidden{
-  display: none;
-}
-
 .opacity--zero {
-  @media #{$desktop} {
-  opacity: 0;
+  @media #{$tablet}, #{$desktop} {
+    opacity: 0;
   }
 }

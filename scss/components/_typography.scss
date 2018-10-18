@@ -22,14 +22,14 @@
 .user {
   font-size: $font-size-s;
   font-weight: $font-weight-bold;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     font-size: $font-size-mini;
   }
 }
 
 .date {
   font-size: $font-size-micro;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     font-size: $font-size-nano;
   }
 }
@@ -38,7 +38,7 @@
   font-family: $font-montserrat;
   font-size: $font-size-xs;
   font-weight: $font-weight-regular;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     font-size: $font-size-m;
   }
 }
@@ -47,7 +47,7 @@
   font-family: $font-montserrat;
   font-size: $font-size-micro;
   font-weight: $font-weight-regular;
-  @media #{$desktop}  {
+  @media #{$tablet}, #{$desktop}  {
     font-size: $font-size-m;
   }
 }
@@ -55,7 +55,7 @@
 .btn__subscribe {
   font-size: $font-size-micro;
   font-weight: $font-weight-bold;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     font-size: $font-size-xs;
   }
 }

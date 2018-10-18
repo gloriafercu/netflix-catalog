@@ -8,7 +8,7 @@
   background-color: $color-light;
   padding: 18px 0;
   z-index: 1;
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
     padding: 26px 0;
     height: 100px;
   }
@@ -22,7 +22,7 @@
       width: 104px;
       height: 100%;
       @include aspect-ratio(523px,360px);
-      @media #{$desktop}  {
+      @media #{$tablet}, #{$desktop}  {
         width: 133px;
         height: 100%;
       }
@@ -33,7 +33,7 @@
 .suscription__container {
   @include flex(center, space-between);
   .profile {
-    @media #{$desktop} {
+    @media #{$tablet}, #{$tablet} {
       display: block;
       color: $color-dark;
       font-size: $font-size-xs;
