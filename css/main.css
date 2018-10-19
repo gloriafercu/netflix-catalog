@@ -318,12 +318,33 @@ summary {
   line-height: 22px;
 }
 
-.see-more-articles,.see-more {
+.see-more-articles__link {
+  text-decoration: none;
+}
+
+.see-more-articles__link .see-more-articles {
   color: #000000;
   line-height: normal;
 }
 
-.see-more-articles {
+.see-more-articles__link .see-more-articles:hover {
+  color: #d0021b;
+}
+
+.see-more__link {
+  text-decoration: none;
+}
+
+.see-more__link .see-more {
+  color: #000000;
+  line-height: normal;
+}
+
+.see-more__link .see-more:hover {
+  color: #d0021b;
+}
+
+.see-more-articles__link {
   margin-bottom: 80px;
 }
 
@@ -581,6 +602,14 @@ summary {
     height: 100%;
   }
 
+  .suscription__container .profile {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
   .footer__container {
     height: 115px;
   }
@@ -605,7 +634,7 @@ summary {
     margin-top: 10px;
   }
 
-  .see-more-articles {
+  .see-more-articles__link {
     margin-bottom: 0;
   }
 
@@ -758,16 +787,6 @@ summary {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1063px), (min-width: 768px) and (max-width: 1063px) {
-  .suscription__container .profile {
-    display: block;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1063px) {
   .section__container.classic-films {
     display: grid;
@@ -776,11 +795,11 @@ summary {
     grid-column-gap: 60px;
   }
 
-  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
+  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles__link {
     grid-column: span 2;
   }
 
-  .section__container.classic-films .see-more-articles {
+  .section__container.classic-films .see-more-articles__link {
     margin: 60px 0;
   }
 
@@ -791,11 +810,11 @@ summary {
     grid-column-gap: 60px;
   }
 
-  .section__container.series-tv .section__title,.section__container.series-tv .see-more-articles {
+  .section__container.series-tv .section__title,.section__container.series-tv .see-more-articles__link {
     grid-column: span 2;
   }
 
-  .section__container.series-tv .see-more-articles {
+  .section__container.series-tv .see-more-articles__link {
     margin-bottom: 60px;
   }
 
@@ -829,11 +848,11 @@ summary {
     margin-bottom: 111px;
   }
 
-  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles {
+  .section__container.classic-films .section__title,.section__container.classic-films .see-more-articles__link {
     grid-column: span 2;
   }
 
-  .section__container.classic-films .see-more-articles {
+  .section__container.classic-films .see-more-articles__link {
     margin: 83px 0 0;
   }
 

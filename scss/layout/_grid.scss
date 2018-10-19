@@ -31,10 +31,10 @@
   @media #{$tablet} {
     @include grid-columns(2, 0px, 60px);
     .section__title,
-    .see-more-articles {
+    .see-more-articles__link {
       grid-column: span 2;
     }  
-    .see-more-articles {
+    .see-more-articles__link {
       margin: 60px 0;
     }
   }
@@ -43,10 +43,10 @@
     grid-column-gap: 91px;
     margin-bottom: 111px;
     .section__title,
-    .see-more-articles {
+    .see-more-articles__link {
       grid-column: span 2;
     }  
-    .see-more-articles {
+    .see-more-articles__link {
       margin: 83px 0 0;
     }  
   }
@@ -58,10 +58,10 @@
   @media #{$tablet} {
     @include grid-columns(2, 60px, 60px);
     .section__title,
-    .see-more-articles {
+    .see-more-articles__link {
       grid-column: span 2;
     }  
-    .see-more-articles {
+   .see-more-articles__link {
       margin-bottom: 60px;
     }
     .section__title {

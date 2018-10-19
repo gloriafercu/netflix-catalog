@@ -33,7 +33,7 @@
 .suscription__container {
   @include flex(center, space-between);
   .profile {
-    @media #{$tablet}, #{$tablet} {
+    @media #{$tablet}, #{$desktop} {
       display: block;
       color: $color-dark;
       font-size: $font-size-xs;
